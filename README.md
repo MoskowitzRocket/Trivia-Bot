@@ -1,1 +1,2 @@
 # Trivia-Bot
+## Discord Bot
