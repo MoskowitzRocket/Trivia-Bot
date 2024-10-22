@@ -1,22 +1,33 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#main.py
 import os
+
+import discord
+from discord.ext import commands
 from dotenv import load_dotenv
 
+from cmds import Trivia
+
 load_dotenv()
+TOKEN = os.getenv("DISCORD_TOKEN")
+client = discord.Client(intents=discord.Intents.default())
 
-API_KEY = os.getenv('APIKEY')
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+bot = commands.Bot(intents=discord.Intents.all(), command_prefix=",")  # bots prefix
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-    print(API_KEY)
+# Define an event for when the bot is ready
+@bot.event
+async def on_ready():
+    print(f'{bot.user} has connected to Discord!')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+# Define a simple command
+@bot.command()
+async def ping(ctx):
+    await ctx.send('Pong!')
+
+@bot.command()
+async def hello(ctx):
+    await ctx.send('Hello there!')
+
+
+bot.run(TOKEN)

@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="657a99fb-af8f-480b-b0d9-1fb31e414a53" name="Changes" comment="Started Project">
+    <list default="true" id="657a99fb-af8f-480b-b0d9-1fb31e414a53" name="Changes" comment="Got .env working">
+      <change afterPath="$PROJECT_DIR$/cmds/Trivia.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +30,9 @@
   "associatedIndex": 3
 }]]></component>
   <component name="ProjectId" id="2nm457HjWtFKYjPWbfwCDKe0maW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -92,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729565241867</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Got .env working">
+      <option name="closed" value="true" />
+      <created>1729565780156</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729565780156</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -120,6 +130,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started Project" />
+    <MESSAGE value="Got .env working" />
+    <option name="LAST_COMMIT_MESSAGE" value="Got .env working" />
   </component>
 </project>
